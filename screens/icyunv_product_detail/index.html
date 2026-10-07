@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com">  document.addEventListener('DOMContentLoaded', updatePrice);
+</script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-container": "#39ff14", "on-error-container": "#ffdad6", "on-primary": "#053900", "primary-fixed": "#79ff5b", "on-primary-fixed": "#022100", "surface-container": "#201f20", "surface-container-highest": "#353436", "on-error": "#690005", "tertiary": "#f9fafa", "surface": "#131314", "surface-dim": "#131314", "on-tertiary-fixed-variant": "#454747", "surface-container-high": "#2a2a2b", "on-secondary-fixed": "#3d0023", "background": "#131314", "surface-bright": "#3a393a", "secondary-container": "#ff43a9", "on-background": "#e5e2e3", "surface-tint": "#2ae500", "secondary-fixed": "#ffd8e6", "on-tertiary": "#2f3131", "inverse-on-surface": "#313031", "on-primary-fixed-variant": "#095300", "on-surface-variant": "#baccb0", "surface-variant": "#353436", "tertiary-container": "#dddddd", "tertiary-fixed": "#e2e2e2", "error": "#ffb4ab", "on-tertiary-fixed": "#1a1c1c", "inverse-primary": "#106e00", "error-container": "#93000a", "tertiary-fixed-dim": "#c6c6c7", "on-primary-container": "#107100", "on-tertiary-container": "#606162", "surface-container-low": "#1c1b1c", "secondary-fixed-dim": "#ffb0d0", "secondary": "#ffb0d0", "on-secondary-fixed-variant": "#8c0057", "surface-container-lowest": "#0e0e0f", "inverse-surface": "#e5e2e3", "on-secondary-container": "#570034", "primary": "#efffe3", "outline-variant": "#3c4b35", "on-surface": "#e5e2e3", "outline": "#85967c", "on-secondary": "#63003c", "primary-fixed-dim": "#2ae500" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-desktop": "2.5rem", "space-xs": "0.25rem", "margin": "1rem", "gutter": "0.75rem", "gutter-desktop": "1.5rem", "space-xl": "2.5rem" }, fontFamily: { "label-md": ["JetBrains Mono"], "headline-lg-mobile": ["Bebas Neue"], "body-md": ["Space Grotesk"], "label-lg": ["JetBrains Mono"], "display-xl": ["Bebas Neue"], "headline-lg": ["Bebas Neue"], "label-xs": ["JetBrains Mono"], "display-xl-mobile": ["Bebas Neue"], "body-sm": ["Space Grotesk"], "headline-md": ["Bebas Neue"], "body-lg": ["Space Grotesk"] }, fontSize: { "label-md": ["11px", { lineHeight: "14px", letterSpacing: "0.1em", fontWeight: "500" }], "headline-lg-mobile": ["28px", { lineHeight: "30px", letterSpacing: "0.05em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["13px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "600" }], "display-xl": ["56px", { lineHeight: "56px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg": ["36px", { lineHeight: "38px", letterSpacing: "0.05em", fontWeight: "700" }], "label-xs": ["9px", { lineHeight: "12px", letterSpacing: "0.14em", fontWeight: "700" }], "display-xl-mobile": ["42px", { lineHeight: "42px", letterSpacing: "0.04em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["24px", { lineHeight: "26px", letterSpacing: "0.06em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#131314;color:#e5e2e3;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary-container transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[20px]">arrow_back</span></button><img alt="ICYUNV Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VFJkgTbNzjsJYUMLEhVmxTiIXhqIyeu-gvjCnXxcna8Arx6B0lR0QaBqM5_zXuqMco62QbCqFmTC8nDdeUPhqHCFHi6JjLHFyCasHnexpsaVTv7Xv7Orx3T3Etf5djDX16xp-W7lmcF-LlGGjc_KL6yWYoM1rLQ4dDkDlg_it3zdzrMw5qZMl4PryfWU6kaFtm1BrExt8mV2IZvXcI2spDuA74IHQM4u4D1rYDo84"/><h1 class="font-headline-md text-headline-md uppercase text-on-surface tracking-wide truncate max-w-[140px]">Product Detail</h1></div><div class="flex items-center gap-space-xs"><div class="flex items-center gap-space-xs px-space-xs py-0.5 rounded-full bg-surface-container-high/90"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-xs text-label-xs uppercase text-primary-container font-bold">SECURE</span></div><button class="w-11 h-11 flex items-center justify-center shrink-0"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXBRYZhdlhSRWF9Dk4oBurJaCtDIijF265e2E8NkeUHpaPQtj9EibY9OFUMQaLzYh584_0BTTYEFOjutDNv3dWCjuURZFU0vIwe0Y1uwHjwUuUKWoluRPZiXD1Nb8-wv5rUvWA4JEhneCVimtFbSwL0F68HTOqt2QhMEA3uXHeFAL4WSf3Y0kiAKfaCMY8u-zxmRrAk2HihfazubansmvNf-bpUlySDIuNBK0Hbgk"/></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Ticker Banner -->
+<div class="w-full bg-surface-container-lowest px-margin py-1.5 flex items-center justify-between overflow-hidden">
+<div class="flex items-center gap-space-xs">
+<span class="inline-block w-2 h-2 rounded-full bg-secondary-container animate-ping"></span>
+<span class="font-label-xs text-label-xs uppercase tracking-widest text-secondary font-bold">LIMITED VAULT ALLOCATION</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant tracking-wider">DROP // 004.REV.7</span>
+</div>
+<!-- Hero Media Canvas -->
+<div class="relative w-full bg-surface-container-lowest flex flex-col">
+<!-- Top Floating Meta Pills -->
+<div class="absolute top-space-sm left-margin right-margin z-20 flex items-center justify-between pointer-events-none">
+<div class="px-space-xs py-0.5 rounded-full bg-surface-container-highest/90 backdrop-blur-md flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[14px]">bolt</span>
+<span class="font-label-xs text-label-xs text-primary-container uppercase font-bold">BATCH 004 SPEC</span>
+</div>
+<div class="px-space-xs py-0.5 rounded-full bg-secondary-container/20 backdrop-blur-md flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-xs text-label-xs text-secondary font-bold tracking-tight">7 UNITS LEFT</span>
+</div>
+</div>
+<!-- Main Viewport Frame -->
+<div class="relative w-full aspect-[3/4] overflow-hidden bg-surface-container-low group">
+<img alt="FALLEN CHOIR OVERSIZED TEE" class="w-full h-full object-cover transition-transform duration-500 ease-out" id="main-product-img" src="../../images/fallen-choir.jpg"/>
+<!-- Ambient Cyber Glow overlay bottom -->
+<div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-surface via-surface/40 to-transparent pointer-events-none"></div>
+<!-- Tactical Zoom Trigger -->
+<button class="absolute bottom-space-md right-space-md w-10 h-10 rounded-lg bg-surface-container-highest/80 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-primary-container transition-colors shadow-lg active:scale-95" id="zoom-btn">
+<span class="material-symbols-outlined text-[20px]">zoom_in</span>
+</button>
+<!-- Carousel Pagination Indicator -->
+<div class="absolute bottom-space-md left-space-md flex items-center gap-1.5 px-space-xs py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-sm">
+<span class="w-3.5 h-1.5 rounded-full bg-primary-container transition-all" id="dot-0"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant transition-all" id="dot-1"></span>
+<span class="w-1.5 h-1.5 rounded-full bg-surface-variant transition-all" id="dot-2"></span>
+</div>
+</div>
+<!-- Gallery Thumbnail Rail -->
+<div class="px-margin -mt-4 relative z-10 grid grid-cols-3 gap-gutter">
+<!-- Thumb 1 Active -->
+<button class="flex flex-col text-left p-1 rounded-lg bg-surface-container-high transition-all shadow-md group" id="thumb-btn-0" onclick="selectThumb(0)">
+<div class="relative w-full aspect-square rounded overflow-hidden bg-surface-container-lowest">
+<img alt="Back graphic closeup" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="../../images/fallen-choir-back.jpg"/>
+<div class="absolute inset-0 bg-primary-container/10"></div>
+</div>
+<div class="mt-1 px-0.5 flex items-center justify-between">
+<span class="font-label-xs text-[8px] leading-[10px] uppercase text-primary-container font-bold truncate">01. BACK</span>
+<span class="w-1 h-1 rounded-full bg-primary-container"></span>
+</div>
+</button>
+<!-- Thumb 2 -->
+<button class="flex flex-col text-left p-1 rounded-lg bg-surface-container transition-all shadow-md group opacity-75 hover:opacity-100" id="thumb-btn-1" onclick="selectThumb(1)">
+<div class="relative w-full aspect-square rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Close up detailed shot of acid green screenprint logo on chest of heavy black textured cotton streetwear garment with vibrant contrast and technical alignment" src="../../images/fallen-choir-print.jpg"/>
+</div>
+<div class="mt-1 px-0.5 flex items-center justify-between">
+<span class="font-label-xs text-[8px] leading-[10px] uppercase text-on-surface-variant font-bold truncate">02. CHEST</span>
+</div>
+</button>
+<!-- Thumb 3 -->
+<button class="flex flex-col text-left p-1 rounded-lg bg-surface-container transition-all shadow-md group opacity-75 hover:opacity-100" id="thumb-btn-2" onclick="selectThumb(2)">
+<div class="relative w-full aspect-square rounded overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform" data-alt="Macro extreme close-up of 300 GSM heavyweight combed knit cotton weave showcasing ultra dense tactile texture raw fibers and industrial black dye finish" src="../../images/fallen-choir-fabric.jpg"/>
+</div>
+<div class="mt-1 px-0.5 flex items-center justify-between">
+<span class="font-label-xs text-[8px] leading-[10px] uppercase text-on-surface-variant font-bold truncate">03. 300GSM</span>
+</div>
+</button>
+</div>
+</div>
+<!-- Primary Info Block -->
+<div class="px-margin mt-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-xs text-label-xs font-semibold uppercase tracking-wider">OFFICIAL VAULT ARCHIVE</span>
+<span class="px-space-xs py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-xs text-label-xs font-bold uppercase tracking-widest">[DEMO ITEM]</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile uppercase text-on-surface tracking-wide leading-none">FALLEN CHOIR OVERSIZED TEE</h2>
+<div class="mt-space-xs flex items-baseline justify-between">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg-mobile text-headline-lg-mobile text-primary-container font-bold"><span id="pd-price">$29</span></span>
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest font-semibold">DEMO CURRENCY</span>
+</div>
+<div class="flex items-center gap-1 px-space-xs py-1 rounded bg-surface-container-high">
+<span class="material-symbols-outlined text-primary-container text-[14px]">bolt</span>
+<span class="font-label-xs text-label-xs text-primary-container font-bold tracking-tight">7 REMAINING IN BATCH 004</span>
+</div>
+</div>
+</div>
+<!-- Description Card -->
+<div class="mt-space-xs p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs shadow-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-xs text-label-xs uppercase tracking-widest text-on-surface-variant font-bold">MATERIAL // CUT SPECIFICATION</span>
+<span class="font-label-xs text-label-xs text-primary-container font-mono">SPEC_ID: 300-ACD</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+        Custom milled 300 GSM ultra-heavyweight combed cotton. Hand-pulled neon screenprint with reactive acid-green pigment. Preshrunk, boxy drop-shoulder cut inspired by 90s brutalist rave archives.
+      </p>
+<div class="pt-space-xs flex items-center gap-space-md">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary-container">layers</span>
+<span class="font-label-xs text-label-xs uppercase">300 GSM COMBED</span>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">flare</span>
+<span class="font-label-xs text-label-xs uppercase">REACTIVE ACID PIGMENT</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Selectors -->
+<div class="px-margin mt-space-lg flex flex-col gap-space-lg">
+<!-- 1. Size Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">SELECT SIZE</span>
+<span class="font-label-xs text-label-xs text-primary-container font-bold" id="selected-size-label">[L - IN STOCK]</span>
+</div>
+<button class="flex items-center gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors py-1" onclick="toggleSizeGuide()">
+<span class="material-symbols-outlined text-[15px]">straighten</span>
+<span class="font-label-xs text-label-xs uppercase tracking-wide font-bold underline decoration-dotted">SIZE GUIDE</span>
+</button>
+</div>
+<!-- Size Tile Buttons -->
+<div class="grid grid-cols-5 gap-space-xs" id="size-selector-grid">
+<button class="size-btn h-12 flex flex-col items-center justify-center rounded bg-surface-container text-on-surface font-label-lg text-label-lg uppercase active:scale-95 transition-all" onclick="selectSize('S', this)">
+<span>S</span>
+<span class="font-label-xs text-[7px] text-on-surface-variant font-normal">LOW</span>
+</button>
+<button class="size-btn h-12 flex flex-col items-center justify-center rounded bg-surface-container text-on-surface font-label-lg text-label-lg uppercase active:scale-95 transition-all" onclick="selectSize('M', this)">
+<span>M</span>
+<span class="font-label-xs text-[7px] text-on-surface-variant font-normal">2 LEFT</span>
+</button>
+<button class="size-btn active-size h-12 flex flex-col items-center justify-center rounded bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase font-bold shadow-[0_0_12px_rgba(57,255,20,0.35)] active:scale-95 transition-all" onclick="selectSize('L', this)">
+<span>L</span>
+<span class="font-label-xs text-[7px] text-on-primary font-bold">FEW</span>
+</button>
+<button class="size-btn h-12 flex flex-col items-center justify-center rounded bg-surface-container text-on-surface font-label-lg text-label-lg uppercase active:scale-95 transition-all" onclick="selectSize('XL', this)">
+<span>XL</span>
+<span class="font-label-xs text-[7px] text-on-surface-variant font-normal">3 LEFT</span>
+</button>
+<button class="size-btn h-12 flex flex-col items-center justify-center rounded bg-surface-container-low text-on-surface-variant/50 font-label-lg text-label-lg uppercase relative overflow-hidden cursor-not-allowed" onclick="selectSize('2XL', this)">
+<span>2XL</span>
+<span class="font-label-xs text-[7px] text-secondary font-bold">GONE</span>
+<div class="absolute inset-0 bg-surface-container-highest/20 pointer-events-none"></div>
+</button>
+</div>
+</div>
+<!-- 2. Fit Selector -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">SILHOUETTE CUT</span>
+<span class="font-label-xs text-label-xs text-on-surface-variant uppercase font-mono">FIT_ARCHIVE: 90S</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs p-1 rounded-xl bg-surface-container-lowest">
+<button class="h-11 rounded-lg bg-surface-container-highest text-primary-container font-label-md text-label-md font-bold uppercase flex items-center justify-center gap-space-xs transition-all shadow-sm" id="fit-boxy" onclick="selectFit(0)">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>HEAVYWEIGHT BOXY</span>
+</button>
+<button class="h-11 rounded-lg bg-transparent text-on-surface-variant font-label-md text-label-md uppercase flex items-center justify-center gap-space-xs transition-all hover:text-on-surface" id="fit-standard" onclick="selectFit(1)">
+<span>STANDARD LIGHT</span>
+</button>
+</div>
+</div>
+<!-- 3. Finish Toggle -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md uppercase text-on-surface font-bold">DISTRESSED RAW EDGE HEM</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-container/20 text-primary-container font-label-xs text-label-xs uppercase font-bold">+$10</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Hand-frayed raw hem (Heavyweight only)</span>
+</div>
+<!-- Neon Switch Component -->
+<button aria-checked="true" class="relative shrink-0 w-12 h-7 rounded-full bg-primary-container p-0.5 shadow-[0_0_14px_-2px_rgba(57,255,20,0.5)] transition-colors" id="finish-toggle" onclick="toggleFinish()">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest translate-x-5 transition-transform flex items-center justify-center" id="finish-knob">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</div>
+</button>
+</div>
+<!-- 4. Quantity Stepper -->
+<div class="flex items-center justify-between p-space-md rounded-xl bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase text-on-surface font-bold">DROP ALLOCATION</span>
+<span class="font-body-sm text-body-sm text-secondary flex items-center gap-1 font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+          MAX 2 PIECES PER COLLECTOR
+        </span>
+</div>
+<div class="flex items-center rounded-lg bg-surface-container-highest p-1">
+<button class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-on-surface hover:text-primary-container active:scale-90 transition-all" onclick="adjustQty(-1)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="w-10 text-center font-headline-md text-headline-md text-on-surface font-bold" id="qty-val">1</span>
+<button class="w-9 h-9 rounded bg-surface-container flex items-center justify-center text-on-surface hover:text-primary-container active:scale-90 transition-all" onclick="adjustQty(1)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+<!-- Action Trigger CTAs -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Primary Cart Trigger -->
+<button class="relative w-full h-14 rounded-lg bg-surface-container-highest flex items-center justify-between px-space-lg text-primary-container shadow-[0_0_18px_rgba(57,255,20,0.25)] hover:shadow-[0_0_24px_rgba(57,255,20,0.45)] active:translate-y-0.5 transition-all overflow-hidden group" onclick="addToBagFeedback()">
+<div class="absolute inset-0 bg-primary-container/10 group-hover:bg-primary-container/20 transition-colors"></div>
+<div class="relative flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[22px] text-primary-container group-hover:rotate-12 transition-transform">shopping_bag</span>
+<span class="font-headline-lg-mobile text-headline-lg-mobile tracking-wider uppercase font-bold text-primary-container" id="cta-label">ADD TO BAG — <span id="pd-cta-price">$29</span> DEMO</span>
+</div>
+<div class="relative flex items-center gap-1">
+<span class="font-label-xs text-label-xs font-bold uppercase text-on-surface-variant">LOCK IN</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</div>
+</button>
+<!-- Instant Checkout: Google Pay Pill -->
+<button class="w-full h-12 rounded-lg bg-surface-container-lowest flex items-center justify-center gap-space-xs hover:bg-surface-container-high active:scale-[0.99] transition-all shadow-md" onclick="gpayFeedback()">
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-on-surface">BUY NOW WITH</span>
+<!-- Crisp stylized GPay pill representation -->
+<div class="flex items-center gap-1 px-space-xs py-0.5 rounded bg-surface-container-high">
+<span class="font-bold text-[14px] tracking-tight text-white flex items-center">
+<span class="text-[#4285F4]">G</span><span class="text-[#EA4335]">o</span><span class="text-[#FBBC05]">o</span><span class="text-[#4285F4]">g</span><span class="text-[#34A853]">l</span><span class="text-[#EA4335]">e</span>
+<span class="ml-1 text-on-surface font-semibold text-[13px]">Pay</span>
+</span>
+</div>
+</button>
+</div>
+<!-- Guarantee & Underground Security Bar -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-space-xs">
+<div class="flex items-center justify-between text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary-container">eco</span>
+<span class="font-label-xs text-label-xs font-bold uppercase text-on-surface">FREE CARBON-NEUTRAL EXPRESS &gt;$75</span>
+</div>
+<span class="font-label-xs text-label-xs text-secondary font-bold">UNDERGROUND VAULT</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">do_not_disturb_on</span>
+<span class="font-label-xs text-label-xs font-bold uppercase text-on-surface">NO RESTOCKS GUARANTEE • ONE CHANCE</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">ESCROW VERIFIED</span>
+</div>
+</div>
+<!-- Accordion Specs Dropdowns -->
+<div class="flex flex-col gap-space-xs pt-space-xs">
+<details class="group rounded-xl bg-surface-container-low p-space-md">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary-container">straighten</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">SIZING SPEC &amp; MEASUREMENTS</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+</summary>
+<div class="pt-space-md flex flex-col gap-space-xs">
+<div class="grid grid-cols-4 gap-2 text-center p-2 rounded bg-surface-container-lowest font-label-xs text-label-xs">
+<span class="text-on-surface-variant">SIZE</span>
+<span class="text-on-surface-variant">CHEST</span>
+<span class="text-on-surface-variant">LENGTH</span>
+<span class="text-on-surface-variant">SLEEVE</span>
+<span class="text-on-surface font-bold">M</span>
+<span class="text-on-surface">62 cm</span>
+<span class="text-on-surface">74 cm</span>
+<span class="text-on-surface">24 cm</span>
+<span class="text-primary-container font-bold">L</span>
+<span class="text-primary-container">66 cm</span>
+<span class="text-primary-container">77 cm</span>
+<span class="text-primary-container">25 cm</span>
+<span class="text-on-surface font-bold">XL</span>
+<span class="text-on-surface">70 cm</span>
+<span class="text-on-surface">80 cm</span>
+<span class="text-on-surface">26 cm</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            Cut oversized with substantial drape. Choose true size for intended drop-shoulder fit, or downsize for a boxy traditional drape.
+          </p>
+</div>
+</details>
+<details class="group rounded-xl bg-surface-container-low p-space-md">
+<summary class="flex items-center justify-between cursor-pointer list-none">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-secondary">local_shipping</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">DISPATCH TIMELINE &amp; FULFILLMENT</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform text-[18px]">expand_more</span>
+</summary>
+<div class="pt-space-md flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<p>Orders ship within 48 hours via stealth insulated packaging with tamper-evident seal and numbered physical authentication card.</p>
+</div>
+</details>
+</div>
+</div>
+<!-- Size Guide Modal Popup (Hidden by default) -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md hidden flex items-center justify-center p-margin" id="size-guide-modal">
+<div class="w-full max-w-sm rounded-xl bg-surface-container p-space-lg flex flex-col gap-space-md shadow-2xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[20px]">straighten</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface">BOX-FIT MATRIX</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface hover:text-primary-container" onclick="toggleSizeGuide()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Architectural oversized fit modeled on 1990s Japanese streetwear archives. Measures flat across garment.
+      </p>
+<div class="flex flex-col gap-1 text-center font-label-xs text-label-xs">
+<div class="grid grid-cols-4 p-2 bg-surface-container-lowest rounded text-on-surface-variant uppercase font-bold">
+<span>SIZE</span><span>CHEST</span><span>LENGTH</span><span>FIT</span>
+</div>
+<div class="grid grid-cols-4 p-2 bg-surface-container-high rounded text-on-surface">
+<span>S</span><span>58cm</span><span>71cm</span><span>RELAXED</span>
+</div>
+<div class="grid grid-cols-4 p-2 bg-surface-container-high rounded text-on-surface">
+<span>M</span><span>62cm</span><span>74cm</span><span>OVERSIZED</span>
+</div>
+<div class="grid grid-cols-4 p-2 bg-surface-container-highest text-primary-container font-bold rounded">
+<span>L</span><span>66cm</span><span>77cm</span><span>ARCHIVAL</span>
+</div>
+<div class="grid grid-cols-4 p-2 bg-surface-container-high rounded text-on-surface">
+<span>XL</span><span>70cm</span><span>80cm</span><span>MASSIVE</span>
+</div>
+</div>
+<button class="w-full h-11 rounded bg-primary-container text-on-primary-container font-headline-md text-headline-md uppercase font-bold" onclick="toggleSizeGuide()">
+        CONFIRM SIZE &amp; RETURN
+      </button>
+</div>
+</div>
+<!-- Toast Confirmation for Bag Add -->
+<div class="fixed bottom-6 left-margin right-margin z-50 pointer-events-none transform translate-y-24 opacity-0 transition-all duration-300" id="toast-notify">
+<div class="p-space-md rounded-xl bg-surface-container-highest text-on-surface shadow-2xl flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md font-bold uppercase text-primary-container">ITEM ALLOCATED TO BAG [1/2]</span>
+</div>
+<span class="font-label-xs text-label-xs text-on-surface-variant">LOCK EXPIRES 09:59</span>
+</div>
+</div>
+</div>
+<script>
+  // Simple State Management
+  let currentQty = 1;
+  let finishActive = true;
+  let isZoomed = false;
+
+  // Tiered tee pricing: Standard Light $29 / Heavyweight Boxy $35 / Heavyweight+Distressed $45
+  let currentFit = 1; // 0 = Heavyweight Boxy, 1 = Standard Light (default)
+  const TEE_PRICES = { standard: 29, heavyweight: 35, distressed: 45 };
+  function currentTeePrice() {
+    if (currentFit === 1) return TEE_PRICES.standard;
+    return finishActive ? TEE_PRICES.distressed : TEE_PRICES.heavyweight;
+  }
+  function updatePrice() {
+    const price = currentTeePrice();
+    const pe = document.getElementById('pd-price');
+    if (pe) pe.textContent = '$' + price;
+    const ce = document.getElementById('pd-cta-price');
+    if (ce) ce.textContent = '$' + price;
+    // distressed toggle only applies to heavyweight
+    const ft = document.getElementById('finish-toggle');
+    if (ft) ft.style.opacity = currentFit === 1 ? '0.35' : '1';
+  }
+
+
+  function selectThumb(idx) {
+    const mainImg = document.getElementById('main-product-img');
+    const dots = [document.getElementById('dot-0'), document.getElementById('dot-1'), document.getElementById('dot-2')];
+    const thumbBtns = [document.getElementById('thumb-btn-0'), document.getElementById('thumb-btn-1'), document.getElementById('thumb-btn-2')];
+    
+    dots.forEach((dot, i) => {
+      if (i === idx) {
+        dot.classList.add('w-3.5', 'bg-primary-container');
+        dot.classList.remove('w-1.5', 'bg-surface-variant');
+      } else {
+        dot.classList.remove('w-3.5', 'bg-primary-container');
+        dot.classList.add('w-1.5', 'bg-surface-variant');
+      }
+    });
+
+    thumbBtns.forEach((btn, i) => {
+      if (i === idx) {
+        btn.classList.add('bg-surface-container-high', 'opacity-100');
+        btn.classList.remove('opacity-75', 'bg-surface-container');
+      } else {
+        btn.classList.remove('bg-surface-container-high', 'opacity-100');
+        btn.classList.add('opacity-75', 'bg-surface-container');
+      }
+    });
+  }
+
+  function selectSize(size, el) {
+    if (size === '2XL') return; // Out of stock
+    const allSizeBtns = document.querySelectorAll('.size-btn');
+    allSizeBtns.forEach(btn => {
+      btn.classList.remove('active-size', 'bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_rgba(57,255,20,0.35)]');
+      if (!btn.innerText.includes('GONE')) {
+        btn.classList.add('bg-surface-container', 'text-on-surface');
+      }
+    });
+
+    el.classList.add('active-size', 'bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_12px_rgba(57,255,20,0.35)]');
+    el.classList.remove('bg-surface-container', 'text-on-surface');
+    
+    document.getElementById('selected-size-label').textContent = `[${size} - IN STOCK]`;
+  }
+
+  function selectFit(fitIdx) {
+    currentFit = fitIdx;
+    setTimeout(updatePrice, 0);
+    const boxy = document.getElementById('fit-boxy');
+    const standard = document.getElementById('fit-standard');
+    if (fitIdx === 0) {
+      boxy.className = "h-11 rounded-lg bg-surface-container-highest text-primary-container font-label-md text-label-md font-bold uppercase flex items-center justify-center gap-space-xs transition-all shadow-sm";
+      boxy.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span>HEAVYWEIGHT BOXY</span>';
+      standard.className = "h-11 rounded-lg bg-transparent text-on-surface-variant font-label-md text-label-md uppercase flex items-center justify-center gap-space-xs transition-all hover:text-on-surface";
+      standard.innerHTML = '<span>STANDARD LIGHT</span>';
+    } else {
+      standard.className = "h-11 rounded-lg bg-surface-container-highest text-primary-container font-label-md text-label-md font-bold uppercase flex items-center justify-center gap-space-xs transition-all shadow-sm";
+      standard.innerHTML = '<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span><span>STANDARD LIGHT</span>';
+      boxy.className = "h-11 rounded-lg bg-transparent text-on-surface-variant font-label-md text-label-md uppercase flex items-center justify-center gap-space-xs transition-all hover:text-on-surface";
+      boxy.innerHTML = '<span>HEAVYWEIGHT BOXY</span>';
+    }
+  }
+
+  function toggleFinish() {
+    finishActive = !finishActive;
+    if (currentFit === 1 && finishActive) { finishActive = false; updatePrice(); return; }
+    setTimeout(updatePrice, 0);
+    const btn = document.getElementById('finish-toggle');
+    const knob = document.getElementById('finish-knob');
+    if (finishActive) {
+      btn.classList.remove('bg-surface-container-highest');
+      btn.classList.add('bg-primary-container', 'shadow-[0_0_14px_-2px_rgba(57,255,20,0.5)]');
+      knob.classList.remove('translate-x-0');
+      knob.classList.add('translate-x-5');
+    } else {
+      btn.classList.add('bg-surface-container-highest');
+      btn.classList.remove('bg-primary-container', 'shadow-[0_0_14px_-2px_rgba(57,255,20,0.5)]');
+      knob.classList.remove('translate-x-5');
+      knob.classList.add('translate-x-0');
+    }
+  }
+
+  function adjustQty(delta) {
+    currentQty = Math.max(1, Math.min(2, currentQty + delta));
+    document.getElementById('qty-val').textContent = currentQty;
+    const total = 29 * currentQty;
+    document.getElementById('cta-label').textContent = `ADD TO BAG — $${total} DEMO`;
+  }
+
+  function toggleSizeGuide() {
+    const modal = document.getElementById('size-guide-modal');
+    modal.classList.toggle('hidden');
+  }
+
+  function addToBagFeedback() {
+    const toast = document.getElementById('toast-notify');
+    toast.classList.remove('translate-y-24', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+    setTimeout(() => {
+      toast.classList.add('translate-y-24', 'opacity-0');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 2800);
+  }
+
+  function gpayFeedback() {
+    addToBagFeedback();
+  }
+
+  // Interactive Zoom
+  document.getElementById('zoom-btn').addEventListener('click', () => {
+    const img = document.getElementById('main-product-img');
+    isZoomed = !isZoomed;
+    if (isZoomed) {
+      img.classList.add('scale-150');
+    } else {
+      img.classList.remove('scale-150');
+    }
+  });
+</script></main></body></html>
